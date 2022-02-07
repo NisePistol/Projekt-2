@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Huvud-Rubrik {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.Huvud-Sida {
+    height: 60vh;
+    padding: 10vh 3vw;
+    background-color: #CFD8D7;
+}
+
+.Huvud-Sida-Div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Huvud-Sida-Text {
+    font-size: 3vh;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.Huvud-Sida-Logga {
+    width: max-content;
+    text-align: center;
+}
+
+.logga {
+    width: 80%;
+}
+
+.Kom-Igång-Knapp {
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    border: 0;
+    margin: 5vh;
+    font-size: 3vh;
+    background-color: darkblue;
+    color: white;
+}
+
+.Kom-Igång-Knapp:hover {
+    background-color: rgba(0, 0, 139, 0.68);
+}
+
+.Kom-Igång-Knapp:active {
+    /* transparant border */
+}
+
+.Naviagtionsbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Naviagtionsbar a {
+    float: left;    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.Naviagtionsbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.Naviagtionsbar a:active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.joe {
+    height: 120vh;
+}
