@@ -237,38 +237,30 @@ h2 {
 }
 
 .Investera {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    height: 25vh;
     margin: 5vh;
+    grid-template-rows: 50%;
+    grid-template-columns: 25% 25%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.Investera-Text {
+    font-size: 2em;
+    line-height: 1em;
 }
 
 .Analytiker {
     text-align: center;
 }
 
-.Investera-Div {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .Investera-Button {
-    padding: 1vw 2vw;
     width: max-content;
+    height: max-content;
     font-size: 1em;
-    margin-top: 3vh;
-}
+    padding: 1vw 2vw;
+    align-self: center;
+    justify-self: center;
 
-@media (max-width: 40em) {
-    .Investera {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Investera-Div{
-        margin-bottom: 10vh;
-        text-align: center;
-        width: 100%;
-    }
 }
