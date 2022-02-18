@@ -51,6 +51,7 @@ h2 {
     font-size: 3vh;
     margin-top: 3vh;
     text-align: center;
+    margin-bottom: 3vh;
 }
 
 .Huvud-Sida-H2 {
@@ -67,7 +68,7 @@ h2 {
     width: 80%;
 }
 
-.Kom-Igång-Knapp {
+.Snygg-Knapp {
     padding: 2vh 2vw;
     border-radius: 10px;
     border: 0;
@@ -77,7 +78,7 @@ h2 {
     color: white;
 }
 
-.Kom-Igång-Knapp:hover {
+.Snygg-Knapp:hover {
     background-color: rgba(0, 0, 139, 0.68);
 }
 
@@ -85,32 +86,42 @@ h2 {
     /* transparant border */
 }
 
-.Naviagtionsbar {
+.Navigationsbar {
     background-color: #333;
     overflow: hidden;
     position: fixed;
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.Naviagtionsbar a {
+.Navigationsbar a {
     float: left;    
     color: #f2f2f2;
-    text-align: center;
     padding: 2vh;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 30px;
 }
 
-.Naviagtionsbar a:hover {
+.Navigationsbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.Naviagtionsbar a:active {
+.Navigationsbar a:active {
     background-color: #04AA6D;
     color: white;
+}
+
+.Navigationsbar-Div {
+    margin-right: 100px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigationsbar-2 {
+    display: none;
 }
 
 .video {
@@ -128,43 +139,19 @@ h2 {
     justify-content: space-evenly;
 }
 
-@media (max-width: 40em)
-{
-    .Video-Huvud-Rubriker {
-        flex-direction: column;
-    }
-
-    .Paragraf {
-        margin-bottom: 5vh;
-    }
-
-    .Huvud-Rubrik-Text {
-        margin: auto;
-    }
-
-    .Huvud-Rubrik-H2 {
-        font-size: 3vh;
-    }
-
-    .Huvud-Sida-H2 {
-        font-size: 5vw;
-    }
-
-
-}
-
 .Paragraf {
     padding: 3vh;
 }
 
 .Logga {
-    width: 10%;
-    margin-right: 1vw;
+    width: 50px;
+    margin-right: 10px;
 }
 
 .Logga-Och-Text {
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .Kontaktbar {
@@ -220,47 +207,151 @@ h2 {
     display: flex;   
 }
 
+.Medier-Knapp:hover {
+    padding: 1vh;   
+}
+
+.Köpa-H1 {
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 3em;
+}
+
+.Investera-Simulator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0px 20vh;
+    padding: 0em 2em;
+}
+
+.Investera-Text {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.Analytiker {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.Analytiker-Div {
+    width: 60vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.Investera-Knapp {
+    width: max-content;
+    height: max-content;
+    font-size: 1em;
+    padding: 1em 2em;
+    border-radius: 10px;
+    border: 1px darkblue solid;
+    background-color: darkblue;
+    color: #f2f2f2;
+}
+
+.Investera-Knapp:hover {
+    background-color: rgba(0, 0, 139, 0.68);
+}
+
+.Slide-1 {
+    padding: 3vh 0px;
+    background-color: #CFD8D7;
+}
+.Slide-2 {
+    padding: 3vh 0px;
+    background-color: #f2f2f2;
+}
+
+hr.Solid {
+    border-top: 5px solid #333; 
+    border-radius: 5px;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.Såld-H2 {
+    margin-bottom: 2vh;
+    font-size: 3em;
+}
+
+@media (max-width: 950px) {
+    .Navigationsbar {
+        display: none;
+    }
+
+    .Navigationsbar-2 {
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Navigationsbar-2 a {
+        float: left;    
+        color: #f2f2f2;
+        padding: 2vh;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .Meny-Knapp {
+        margin-right: 50px;
+        height: fit-content;
+        width: fit-content;
+        font-size: 20px;
+        align-self: center;
+        padding: 10px;
+        border-radius: 5px;
+        background-color:rgb(233, 204, 167);
+        border: 0px;
+    }
+
+    .Meny-Knapp:hover {
+        background-color: rgb(241, 188, 118);
+    }
+}
+
+@media (max-width: 40em) {
+    .Analytiker-Div {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 40em) {
     .Kontaktbar {
         flex-direction: column;
     }
 }
 
-.Medier-Knapp:hover {
-    padding: 1vh;   
-}
+@media (max-width: 40em)
+{
 
-.Köpa-H1 {
-    margin-top: 10vw;
-    text-align: center;
-    font-size: 3vw;
-}
+    .Video-Huvud-Rubriker {
+        flex-direction: column;
+    }
 
-.Investera {
-    display: grid;
-    height: 25vh;
-    margin: 5vh;
-    grid-template-rows: 50%;
-    grid-template-columns: 25% 25%;
-    justify-content: space-evenly;
-    text-align: center;
-}
+    .Paragraf {
+        margin-bottom: 5vh;
+    }
 
-.Investera-Text {
-    font-size: 2em;
-    line-height: 1em;
-}
+    .Huvud-Rubrik-Text {
+        margin: auto;
+    }
 
-.Analytiker {
-    text-align: center;
-}
+    .Huvud-Rubrik-H2 {
+        font-size: 3vh;
+    }
 
-.Investera-Button {
-    width: max-content;
-    height: max-content;
-    font-size: 1em;
-    padding: 1vw 2vw;
-    align-self: center;
-    justify-self: center;
-
+    .Huvud-Sida-H2 {
+        font-size: 5vw;
+    }
 }
