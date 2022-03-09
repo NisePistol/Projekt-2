@@ -155,7 +155,7 @@ h2 {
 }
 
 .Kontaktbar {
-    height: 35vh;
+    height: 250px;
     padding: 0px 10vw;
     background-color: #333;
     display: flex;
@@ -168,12 +168,12 @@ h2 {
 } */
 
 .Köp-Knapp {
-    padding: 1vw;
-    font-size: 3vh;
+    padding: 1em;
+    font-size: 20px;
     background-color: #333;
     color: white;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .Köp-Knapp:hover {
@@ -198,8 +198,8 @@ h2 {
     background-color: #333;
     border-radius: 50px;
     border: 1px solid white;
-    width: 10vh;
-    height: 10vh;
+    width: 5em;
+    height: 5em;
     margin: 5px;
 }
 
@@ -320,20 +320,15 @@ hr.Solid {
     }
 }
 
-@media (max-width: 40em) {
+@media (max-width: 40em)
+{
     .Analytiker-Div {
         width: 80vw;
     }
-}
 
-@media (max-width: 40em) {
     .Kontaktbar {
         flex-direction: column;
     }
-}
-
-@media (max-width: 40em)
-{
 
     .Video-Huvud-Rubriker {
         flex-direction: column;
@@ -345,6 +340,7 @@ hr.Solid {
 
     .Huvud-Rubrik-Text {
         margin: auto;
+        width: 70vw;
     }
 
     .Huvud-Rubrik-H2 {
@@ -353,5 +349,9 @@ hr.Solid {
 
     .Huvud-Sida-H2 {
         font-size: 5vw;
+    }
+
+    .Alla-Medier-Loggor {
+        
     }
 }
