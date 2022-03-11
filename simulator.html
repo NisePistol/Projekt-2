@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Simulator</title>
 </head>
 <body>
-    
+    <form name="form">
+        <div class="Formulär">
+            <div class="Input">
+                <label for="">
+                    Investering
+                    <input type="text" name="investering" id="investmen">
+                </label>
+            </div>
+            <div class="Input">
+                <label for="">
+                    Antal år
+                    <input type="text" name="år" id="years">
+                </label>
+            </div>
+
+            <input type="button" value="Calculate" onclick="calculate()">
+
+            output: <input type="text" name="resultat">
+        </div>
+    </form>
 </body>
 </html>

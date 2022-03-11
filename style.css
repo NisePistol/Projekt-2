@@ -281,6 +281,11 @@ hr.Solid {
     font-size: 3em;
 }
 
+.Formulär {
+    
+}
+
+
 @media (max-width: 950px) {
     .Navigationsbar {
         display: none;
