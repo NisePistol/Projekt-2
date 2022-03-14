@@ -34,8 +34,8 @@ h2 {
 }
 
 .Huvud-Sida {
-    height: 60vh;
-    padding: 12vh 3vw;
+    height: max-content;
+    padding: 100px 3vw 30px;
     background-color: #CFD8D7;
     display: flex;
     flex-direction: column;
@@ -48,10 +48,9 @@ h2 {
 }
 
 .Huvud-Sida-Text {
-    font-size: 3vh;
-    margin-top: 3vh;
+    font-size: 20px;
+    margin: 3vh 0px;
     text-align: center;
-    margin-bottom: 3vh;
 }
 
 .Huvud-Sida-H2 {
@@ -65,7 +64,7 @@ h2 {
 }
 
 .Bild {
-    width: 80%;
+    width: 70%;
 }
 
 .Snygg-Knapp {
@@ -155,17 +154,13 @@ h2 {
 }
 
 .Kontaktbar {
-    height: 250px;
+    height: 200px;
     padding: 0px 10vw;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
-/* @media {
-    
-} */
 
 .Köp-Knapp {
     padding: 1em;
@@ -221,7 +216,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh 0px 20vh;
+    margin: 10vh 0px 50px;
     padding: 0em 2em;
 }
 
@@ -282,9 +277,28 @@ hr.Solid {
 }
 
 .Formulär {
-    
+    display: flex;
+    flex-direction: column;
 }
 
+.Navbar-titel {
+    font-size: 30px;
+    color: #f2f2f2;
+}
+
+.Dropdown-Text {
+    display: none;
+}
+
+.Kalkylera-Knapp {
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    border: 0;
+    font-size: 3vh;
+    background-color: darkblue;
+    color: white;
+    width: 200px;
+}
 
 @media (max-width: 950px) {
     .Navigationsbar {
@@ -305,7 +319,6 @@ hr.Solid {
         color: #f2f2f2;
         padding: 2vh;
         text-decoration: none;
-        font-size: 30px;
     }
 
     .Meny-Knapp {
@@ -322,6 +335,10 @@ hr.Solid {
 
     .Meny-Knapp:hover {
         background-color: rgb(241, 188, 118);
+    }
+
+    .Dropdown {
+        display: flex;
     }
 }
 

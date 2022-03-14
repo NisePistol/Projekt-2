@@ -5,6 +5,6 @@ function calculate() {
 
     investment = Number(document.form.investering.value);
     years = Number(document.form.år.value);
-
+    
     document.form.resultat.value = Math.pow(increase, years) * investment;
 }
