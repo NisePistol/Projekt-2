@@ -97,7 +97,7 @@ h2 {
 .Navigationsbar a {
     float: left;    
     color: #f2f2f2;
-    padding: 2vh;
+    padding: 15px 30px;
     text-decoration: none;
     font-size: 30px;
 }
@@ -107,14 +107,18 @@ h2 {
     color: black;
 }
 
+.Navigationsbar p {
+    color: #f2f2f2;
+}
+
 .Navigationsbar a:active {
     background-color: #04AA6D;
     color: white;
 }
 
 .Navigationsbar-Div {
-    margin-right: 100px;
-    width: 600px;
+    margin-right: 50px;
+    width: max-content;
     display: flex;
     justify-content: space-between;
 }
@@ -150,7 +154,11 @@ h2 {
 .Logga-Och-Text {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+}
+
+.Logga-Och-Text :hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .Kontaktbar {
@@ -255,7 +263,7 @@ h2 {
 }
 
 .Slide-1 {
-    padding: 100px 0px;
+    padding: 100px 0px 50px;
     background-color: #CFD8D7;
 }
 .Slide-2 {
@@ -281,11 +289,7 @@ hr.Solid {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-}
-
-.Navbar-titel {
-    font-size: 30px;
-    color: #f2f2f2;
+    margin-right: 300px;
 }
 
 .Dropdown-Text {
@@ -293,10 +297,10 @@ hr.Solid {
 }
 
 .Kalkylera-Knapp {
-    padding: 2vh 2vw;
+    padding: 10px 15px;
     border-radius: 10px;
     border: 0;
-    font-size: 3vh;
+    font-size: 2em;
     background-color: darkblue;
     color: white;
     width: max-content;
@@ -324,11 +328,51 @@ input {
 
 li {
     font-size: 2em;
-
 }
 
+.Simulator-Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
 
-@media (max-width: 950px) {
+.Simulator-Vänster-Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Simulator-Vänster-Div h1 {
+    padding-bottom: 20px;
+}
+
+.Simulator-Vänster-Div h1 {
+    text-align: center;
+}
+
+.Vänster-Items {
+    padding-top: 20px;
+}
+
+.Solidus {
+    border-top: 5px solid #333; 
+    border-radius: 5px;
+    width: 300px;
+}
+
+.Vänster-Låda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Vänster-Låda-2 {
+    display: none;
+}
+
+@media (max-width: 1080px) {
     .Navigationsbar {
         display: none;
     }
@@ -345,8 +389,14 @@ li {
     .Navigationsbar-2 a {
         float: left;    
         color: #f2f2f2;
-        padding: 2vh;
+        padding: 15px 30px;
         text-decoration: none;
+        font-size: 30px;
+    }
+
+    .Navigationsbar-2 a:hover {
+        background-color: #ddd;
+        color: black;
     }
 
     .Meny-Knapp {
@@ -367,6 +417,29 @@ li {
 
     .Dropdown {
         display: flex;
+    }
+
+    .Simulator-Wrapper {
+        flex-direction: column;
+    }
+
+    .Simulator-Vänster-Div {
+        padding-top: 100px;
+    }
+
+    .Formulär {
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .Vänster-Låda {
+        display: none;
+    }
+
+    .Vänster-Låda-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -403,5 +476,12 @@ li {
 
     .Alla-Medier-Loggor {
         
+    }
+}
+
+@media (max-width: 450px)
+{
+    input {
+        width: 250px;
     }
 }

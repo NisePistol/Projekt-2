@@ -1,4 +1,7 @@
-function calculate() {
+let calcButton = document.querySelector("#calcButton");
+calcButton.addEventListener("click", Calculate);
+
+function Calculate() {
     let investment;
     let years;
     let increase = 3;
@@ -7,4 +10,4 @@ function calculate() {
     years = Number(document.form.år.value);
     
     document.form.resultat.value = Math.pow(increase, years) * investment;
-}
+}   

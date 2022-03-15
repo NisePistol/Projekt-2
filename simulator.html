@@ -12,18 +12,19 @@
     <div class="Navigationsbar">
         <a class="Logga-Och-Text" href="index.html">
             <img src="Bilder/Lawcoin.png" alt="Logga av lawcoin" class="Logga">
-            <p class="Navbar-titel">Lawcoin</p>
+            Lawcoin
         </a>
         <div class="Navigationsbar-Div">
             <a href="kopa.html">Köpa</a>
             <a href="#Vad">Vad är Lawcoin?</a>
             <a href="#Kontakt">Kontakt</a>
+            <a href="index.html">Hem</a>
         </div>
     </div>
     <div class="Navigationsbar-2">
         <a class="Logga-Och-Text" href="index.html">
             <img src="Bilder/Lawcoin.png" alt="Logga av lawcoin" class="Logga">
-            <p class="Navbar-titel">Lawcoin</p>
+            Lawcoin
         </a>
         <div class="Dropdown">
             <button class="Meny-Knapp">MENY</button>
@@ -34,41 +35,60 @@
             </div>
         </div>
     </div>
-    <form name="form">
-        <div class="Formulär">
-            <div class="Input">
-                <ul>
-                    <li>
-                        Investering:
-                    </li>
-                    <li>
-                        <input type="text" name="investering">     
-                    </li>
-                </ul>          
+    <div class="Simulator-Wrapper">
+        <div class="Simulator-Vänster-Div">
+            <h1 class="Vänster-Items">Din investering ökar med 300% varje år!</h1>
+            <div class="Vänster-Låda">
+                <hr class="Solidus">
+                <h2 class="Vänster-Items">Redo att investera?</h2>
+                <a href="Investera.html" class="Vänster-Items">
+                    <button class="Kalkylera-Knapp">Investera</button>
+                </a>
             </div>
-            <div class="Input">  
-                <ul>
-                    <li>
-                        Antal år:
-                    </li>
-                    <li>
-                        <input type="text" name="år">
-                    </li>
-                </ul>
-            </div>
-            <div class="Input">
-                <ul>
-                    <li>
-                        Pengar efter:
-                    </li>
-                    <li>
-                        <input type="text" name="resultat">
-                    </li>
-                </ul>
-            </div>
-            <input class="Kalkylera-Knapp" type="button" value="Calculate" onclick="calculate()">
         </div>
-    </form>
+        <form name="form">
+            <div class="Formulär">
+                <div class="Input">
+                    <ul>
+                        <li>
+                            Investering:
+                        </li>
+                        <li>
+                            <input type="number" name="investering" min="1">     
+                        </li>
+                    </ul>          
+                </div>
+                <div class="Input">  
+                    <ul>
+                        <li>
+                            Antal år:
+                        </li>
+                        <li>
+                            <input type="number" name="år" min="1">
+                        </li>
+                    </ul>
+                </div>
+                <div class="Input">
+                    <ul>
+                        <li>
+                            Pengar efter:
+                        </li>
+                        <li>
+                            <input type="number" name="resultat">
+                        </li>
+                    </ul>
+                </div>
+                <input class="Kalkylera-Knapp" type="button" value="Calculate" id="calcButton">
+            </div>
+        </form>
+        <div class="Vänster-Låda-2">
+            <hr class="Solidus">
+            <h2 class="Vänster-Items">Redo att investera?</h2>
+            <a href="Investera.html" class="Vänster-Items">
+                <button class="Kalkylera-Knapp">Investera</button>
+            </a>
+        </div>
+    </div>
     <div id="Kontakt" class="Kontaktbar">
         <a href="kopa.html">
             <button class="Köp-Knapp">
