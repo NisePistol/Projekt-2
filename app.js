@@ -9,5 +9,8 @@ function Calculate() {
     investment = Number(document.form.investering.value);
     years = Number(document.form.år.value);
     
-    document.form.resultat.value = Math.pow(increase, years) * investment;
+    if (years > 0 && investment > 0)
+    {
+        document.form.resultat.value = Math.pow(increase, years) * investment;
+    }
 }   
