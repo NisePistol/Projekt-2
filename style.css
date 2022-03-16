@@ -324,6 +324,7 @@ input {
     width: 300px;
     height: 30px;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 li {
@@ -370,6 +371,41 @@ li {
 
 .Vänster-Låda-2 {
     display: none;
+}
+
+.Betalning-Form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.Betalning-Form label {
+    margin-bottom: 35px;
+}
+
+.Betalning-Form li {
+    font-size: 25px;
+}
+
+.Betalning-Form .Kalkylera-Knapp {
+    font-size: 25px;
+}
+
+.Betalning-Lower-Div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Längre-Input-Bar {
+    width: 98%;
+}
+
+.Mellan-Div {
+    height: 150px;
 }
 
 @media (max-width: 1080px) {
