@@ -408,6 +408,10 @@ li {
     height: 150px;
 }
 
+.Betalning-Lower-Div-2 {
+    display: none;
+}
+
 @media (max-width: 1080px) {
     .Navigationsbar {
         display: none;
@@ -519,5 +523,20 @@ li {
 {
     input {
         width: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Betalning-Form {
+        width: 60vw;
+    }
+
+    .Betalning-Lower-Div {
+        display: none;
+    }
+
+    .Betalning-Lower-Div-2 {
+        display: flex;
+        flex-direction: column;
     }
 }

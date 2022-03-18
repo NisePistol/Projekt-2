@@ -1,8 +1,5 @@
-let calcButton = document.querySelector("#calcButton");
+let calcButton = document.getElementById("#calcButton");
 calcButton.addEventListener("click", Calculate);
-
-let expireDate = document.getElementById("#Utgång");
-expireDate.addEventListener(InsertText);
 
 function Calculate() {
     let investment;
@@ -15,9 +12,4 @@ function Calculate() {
     if (years > 0 && investment > 0) {
         document.form.resultat.value = Math.pow(increase, years) * investment;
     }
-}
-
-function InsertText() {
-    
-
 }

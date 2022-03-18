@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -64,7 +65,7 @@
                         Utgångsdatum
                     </li>
                     <li>
-                        <input id="Utgång" type="number" placeholder="MM/ÅÅ" required>
+                        <input class="Kortare-Bar" type="number" placeholder="MM/ÅÅ" min="0" required>
                     </li>
                 </ul>
             </label>
@@ -74,12 +75,58 @@
                         CVV
                     </li>
                     <li>
-                        <input type="number" placeholder="123" required>
+                        <input class="Kortare-Bar" type="number" placeholder="123"  min="0" required>
+                    </li>
+                </ul>
+            </label>
+        </div>
+        <div class="Betalning-Lower-Div-2">
+            <label>
+                <ul>
+                    <li>
+                        Utgångsdatum
+                    </li>
+                    <li>
+                        <input class="Längre-Input-Bar" type="number" placeholder="MM/ÅÅ" min="0" required>
+                    </li>
+                </ul>
+            </label>
+            <label>
+                <ul>
+                    <li>
+                        CVV
+                    </li>
+                    <li>
+                        <input class="Längre-Input-Bar" type="number" placeholder="123"  min="0" required>
                     </li>
                 </ul>
             </label>
         </div>
         <button type="submit" class="Kalkylera-Knapp">Skicka</button>
     </form>
+    <div id="Kontakt" class="Kontaktbar">
+        <a href="kopa.html">
+            <button class="Köp-Knapp">
+                Köp lawcoin
+            </button>
+        </a>
+        <div class="Alla-Medier-Loggor">
+            <a href="https://WWW.Twitter.com" target="_blank">
+                <button class="Medier-Knapp">
+                    <img src="Bilder/Twitter-logo.png" alt="Bild på twitters logga" class="Medier-Loggor">
+                </button>
+            </a>
+            <a href="https://WWW.facebook.com" target="_blank">
+                <button class="Medier-Knapp">
+                    <img src="Bilder/facebook-log.png" alt="Bild på Facebooks logga" class="Medier-Loggor">
+                </button>
+            </a>
+            <a href="https://WWW.discord.com" target="_blank">
+                <button class="Medier-Knapp">
+                    <img src="Bilder/Discord-Logo.png" alt="Bild på Facebooks logga" class="Medier-Loggor">
+                </button>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
