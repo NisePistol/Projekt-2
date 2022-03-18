@@ -381,6 +381,7 @@ li {
     margin: auto;
     background-color: #ddd;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 
 .Betalning-Form label {
@@ -512,10 +513,6 @@ li {
 
     .Huvud-Sida-H2 {
         font-size: 5vw;
-    }
-
-    .Alla-Medier-Loggor {
-        
     }
 }
 
