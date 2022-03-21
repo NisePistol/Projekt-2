@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
     <title>Lawcoin - Investera</title>
 </head>
 <body>
+    <div class="Navbar-Extenstion">
+        <a href="kopa.html">Köpa</a>
+        <a href="#Vad">Vad är Lawcoin?</a>
+        <a href="#Kontakt">Kontakt</a>
+        <a href="index.html">Hem</a>
+    </div>
     <div class="Navigationsbar">
         <a class="Logga-Och-Text" href="index.html">
             <img src="Bilder/Lawcoin.png" alt="Logga av lawcoin" class="Logga">
@@ -26,84 +31,56 @@
             <img src="Bilder/Lawcoin.png" alt="Logga av lawcoin" class="Logga">
             Lawcoin
         </a>
-        <div class="Dropdown">
-            <button class="Meny-Knapp">MENY</button>
-            <div class="Dropdown-Text">
-                <a href="kopa.html">Köpa</a>
-                <a href="simulator.html">Simulator</a>
-                <a href="index.html">Kontakt</a>
-            </div>
-        </div>
     </div>
-    <div class="Mellan-Div"></div>
-
-    <form class="Betalning-Form">
-        <label>
-            <ul>
-                <li>
-                    Kort nummer
-                </li>
-                <li>
-                    <input class="Längre-Input-Bar" type="number" placeholder="Kort nummer" required>
-                </li>
-            </ul>
-        </label>
-        <label>
-            <ul>
-                <li>
-                    Namn på kort
-                </li>
-                <li>
-                    <input class="Längre-Input-Bar" type="text" placeholder="Hela namnet" required>
-                </li>
-            </ul>
-        </label>
-        <div class="Betalning-Lower-Div">
+    <div class="Filler">
+        <h1 class="Filler-H1">INVESTERA I LAWCOIN!</h1>
+        <form class="Betalning-Form" method="GET" action="">
             <label>
                 <ul>
                     <li>
-                        Utgångsdatum
+                        Kort nummer
                     </li>
                     <li>
-                        <input class="Kortare-Bar" type="number" placeholder="MM/ÅÅ" min="0" required>
+                        <input class="Längre-Input-Bar" type="number" placeholder="Kort nummer" required>
                     </li>
                 </ul>
             </label>
             <label>
                 <ul>
                     <li>
-                        CVV
+                        Namn på kort
                     </li>
                     <li>
-                        <input class="Kortare-Bar" type="number" placeholder="123"  min="0" required>
+                        <input class="Längre-Input-Bar" type="text" placeholder="Hela namnet" required>
                     </li>
                 </ul>
             </label>
-        </div>
-        <div class="Betalning-Lower-Div-2">
-            <label>
-                <ul>
-                    <li>
-                        Utgångsdatum
-                    </li>
-                    <li>
-                        <input class="Längre-Input-Bar" type="number" placeholder="MM/ÅÅ" min="0" required>
-                    </li>
-                </ul>
-            </label>
-            <label>
-                <ul>
-                    <li>
-                        CVV
-                    </li>
-                    <li>
-                        <input class="Längre-Input-Bar" type="number" placeholder="123"  min="0" required>
-                    </li>
-                </ul>
-            </label>
-        </div>
-        <button type="submit" class="Kalkylera-Knapp">Skicka</button>
-    </form>
+            <div class="Betalning-Lower-Div">
+                <label>
+                    <ul>
+                        <li>
+                            Utgångsdatum
+                        </li>
+                        <li>
+                            <input class="Kortare-Bar" type="number" placeholder="MM/ÅÅ" required>
+                        </li>
+                    </ul>
+                </label>
+                <label>
+                    <ul>
+                        <li>
+                            CVV
+                        </li>
+                        <li>
+                            <input class="Kortare-Bar" type="number" placeholder="123" required>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+            
+            <button type="submit" class="Kalkylera-Knapp">Skicka</button>
+        </form>
+    </div>
     <div id="Kontakt" class="Kontaktbar">
         <a href="kopa.html">
             <button class="Köp-Knapp">
