@@ -1,4 +1,4 @@
-let calcButton = document.getElementById("#calcButton");
+let calcButton = document.querySelector("#calcButton");
 calcButton.addEventListener("click", Calculate);
 
 function Calculate() {
