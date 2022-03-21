@@ -81,10 +81,6 @@ h2 {
     background-color: rgba(0, 0, 139, 0.68);
 }
 
-.Kom-Igång-Knapp:active {
-    /* transparant border */
-}
-
 .Navigationsbar {
     background-color: #333;
     overflow: hidden;
@@ -454,6 +450,11 @@ li {
 
     .Meny-Knapp:hover {
         background-color: rgb(241, 188, 118);
+    }
+
+    .Meny-Knapp:active
+    {
+        
     }
 
     .Dropdown {
